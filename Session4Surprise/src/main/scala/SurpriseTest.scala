@@ -3,7 +3,7 @@ package com.knoldus
 
 case class Num(number:String ,isEven :Boolean)
 
-object SurpriseTest extends App{
+class SurpriseTest {
 
 
   val listOfNum = List(
@@ -19,14 +19,21 @@ object SurpriseTest extends App{
   val partitionList = listOfNum.partition(value => value.isEven)
   val firstElement = listOfNum.filter(value => (value.number.toInt%2==0)).map(value => value.number )
 
-  println("Filtered EvenNumber: "+filterEvenNumber)
-  println("Filtered OddNumber : "+filterOddNumber)
-  println("Partition : "+partitionList)
-  println("First element of List :"+firstElement)
 
 }
 
+object Driver extends App {
 
+
+  val class
+
+  println("Filtered EvenNumber: " + filterEvenNumber)
+  println("Filtered OddNumber : " + filterOddNumber)
+  println("Partition : " + partitionList)
+  println("First element of List :" + firstElement)
+
+
+}
 
 
 
